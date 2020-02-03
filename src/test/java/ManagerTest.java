@@ -38,7 +38,10 @@ public class ManagerTest {
     @Test
     public void canRaiseSalary(){
         assertEquals(110000.00, manager.raiseSalary(10000.00), 0.1);
+    }
 
-
+    @Test
+    public void canPayBonus(){
+        assertEquals(1000, manager.payBonus(), 0.1);
     }
 }
