@@ -24,6 +24,10 @@ private int salary;
         return salary;
     }
 
+    public void raiseSalary(Double raiseAmount){
+        raiseAmount += this.salary;
+    }
+
     public int payBonus(){
         return this.salary / 100;
     }
