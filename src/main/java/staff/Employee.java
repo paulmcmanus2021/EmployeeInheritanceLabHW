@@ -24,8 +24,14 @@ private double salary;
         return salary;
     }
 
-    public double raiseSalary(Double raiseAmount){
-        return raiseAmount += this.salary;
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void raiseSalary(Double raiseAmount){
+        if (raiseAmount > 0) {
+            this.salary += raiseAmount;
+        }
     }
 
     public double payBonus(){
