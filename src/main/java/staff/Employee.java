@@ -25,11 +25,13 @@ private double salary;
     }
 
     public void setName(String name) {
-        this.name = name;
+        if (name != null) {
+            this.name = name;
+        }
     }
 
     public void raiseSalary(Double raiseAmount){
-        if (raiseAmount > 0) {
+        if (raiseAmount >= 0) {
             this.salary += raiseAmount;
         }
     }

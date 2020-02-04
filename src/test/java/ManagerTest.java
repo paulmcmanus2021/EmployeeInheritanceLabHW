@@ -27,6 +27,12 @@ public class ManagerTest {
     }
 
     @Test
+    public void nameNotNull(){
+        manager.setName(null);
+        assertEquals("Niall", manager.getName());
+    }
+
+    @Test
     public void hasNiNumber(){
         assertEquals(8675309, manager.getNiNumber());
     }

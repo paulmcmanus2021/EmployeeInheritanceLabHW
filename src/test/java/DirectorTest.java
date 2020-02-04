@@ -53,4 +53,9 @@ public class DirectorTest {
     @Test
     public void canHaveBudget(){ assertEquals( 800000, director.getBudget(), 0.1);
     }
+
+    @Test
+    public void canPayBonusDirector(){
+        assertEquals(3000.00, director.payBonus(), 0.1);
+    }
 }
